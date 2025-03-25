@@ -195,7 +195,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: immortalwrt_R2s_Docker_24.10${{ env.FILE_DATE }}
+        name: immortalwrt_24.10_R2s_Docker${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
