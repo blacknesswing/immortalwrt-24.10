@@ -196,9 +196,7 @@ jobs:
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: immortalwrt_24.10_X86${{ env.FILE_DATE }}
-        path: |
-          openwrt/bin/targets/x86/64/*squashfs-combined-efi.img.gz
-          openwrt/bin/targets/x86/64/*.ext4.img.gz
+        path: ${{ env.FIRMWARE }}
 
     - name: Generate release tag
       id: tag
