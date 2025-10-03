@@ -102,9 +102,7 @@ jobs:
         df -Th
         
 
-    - name: Initialization environment
-      env:
-        DEBIAN_FRONTEND: noninteractive
+      - name: 安装依赖
         run: |
           sudo apt purge firefox snap* fwupd gfortran* nginx* azure-cli powershell mono-devel
           sudo apt update -y
