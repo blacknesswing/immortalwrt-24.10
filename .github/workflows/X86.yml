@@ -124,4 +124,4 @@ jobs:
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
         name: immortalwrt_24.10_X86${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/bin/targets/*/
+        path: openwrt/bin/targets/*/*
