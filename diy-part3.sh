@@ -25,5 +25,4 @@
 # sed -i 's/KERNEL_PATCHVER=6.6/KERNEL_PATCHVER=6.11/g' target/linux/x86/Makefile  #修改内核版本
 # sed -i 's/KERNEL_TESTING_PATCHVER:=5.10/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/rockchip/Makefile  #修改内核版本
 
-./scripts/feeds update -a
-./scripts/feeds install -a
+
