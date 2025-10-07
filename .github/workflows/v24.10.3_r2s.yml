@@ -121,7 +121,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
-        name: R2s_v24.10.3${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: R2s_v24.10.3${{ env.FILE_DATE }}
         path: openwrt/bin/targets/*/*
 
     - name: 清理老的运行日志
