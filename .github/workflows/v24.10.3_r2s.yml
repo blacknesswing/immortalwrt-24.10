@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: R2s V24.10.3
+name: V24.10.3-R2s
 
 on:
   workflow_dispatch:
