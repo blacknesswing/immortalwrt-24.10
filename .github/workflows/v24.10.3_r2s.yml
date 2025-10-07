@@ -124,5 +124,9 @@ jobs:
         name: R2s_v24.10.3${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin/targets/*/*
 
-    
+    - name: 清理老的运行日志
+  uses: Mattraks/delete-workflow-runs@v2
+  with:
+    retain_days: 1
+    keep_minimum_runs: 3
 
