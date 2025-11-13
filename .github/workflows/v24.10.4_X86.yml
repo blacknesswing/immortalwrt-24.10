@@ -15,7 +15,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: v24.10.3
+  REPO_BRANCH: v24.10.4
   FEEDS_CONF: v24feeds.conf.default
   CONFIG_FILE: X86.config
   DIY_P1_SH: diy-part1.sh
@@ -133,7 +133,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
-        name: R2s_v24.10.3${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: R2s_v24.10.4${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
       
 
