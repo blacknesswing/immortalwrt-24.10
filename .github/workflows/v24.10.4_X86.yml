@@ -133,7 +133,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
-        name: R2s_v24.10.4${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        name: X86_v24.10.4${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
       
 
