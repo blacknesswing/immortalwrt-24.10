@@ -17,7 +17,7 @@ on:
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_BRANCH: openwrt-24.10
+  REPO_BRANCH: openwrt-25.12
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: R2s_qbittorrent.config
   DIY_P1_SH: diy-part1.sh
@@ -137,7 +137,7 @@ jobs:
       uses: actions/upload-artifact@main
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       with:
-        name: immortalwrt_24.10_R2s${{ env.FILE_DATE }}
+        name: immortalwrt_25.12_R2s${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
         
     - name: 清理老的运行日志
